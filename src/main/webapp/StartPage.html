@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DB STARTUP</title>
+
+<script>
+
+/*
+Submit Once form validation-
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+function submitonce(theform){
+//if IE 4+ or NS 6+
+if (document.all||document.getElementById){
+//screen thru every element in the form, and hunt down "submit" and "reset"
+for (i=0;i<theform.length;i++){
+var tempobj=theform.elements[i]
+if(tempobj.type.toLowerCase()=="submit"||tempobj.type.toLowerCase()=="reset")
+//disable em
+tempobj.disabled=true
+}
+}
+}
+</script>
+
+</head>
+<body>
+<h2>Request</h2>
+<p>Please enter your Stage Name in format : stage****** to start the database...</p>
+<form method="POST" action="http://localhost:8080/s2dbservices/rest/start/database" onSubmit="submitonce(this)">
+  <p> Stage Name  <input type="text" name="stage" size="20"></p>
+
+  <p><button type="submit" > Submit </button></p>
+  <br>
+  <p> Note : Please wait after submitting till the database is starting up to ensure proper startup.. </p>
+</form>
+
+
+
+<p>&nbsp;</p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<web-app>
+   <display-name>Archetype Created Web Application</display-name>
+ <!--   <welcome-file-list>
+    <welcome-file>StartPage.html</welcome-file>
+
+  </welcome-file-list>
+  -->
+   <servlet>
+      <servlet-name>Rest</servlet-name>
+      <servlet-class>
+         com.sun.jersey.spi.container.servlet.ServletContainer
+      </servlet-class>
+      <init-param>
+         <param-name>javax.ws.rs.Application</param-name>
+         <param-value>
+            com.paypal.sea.s2dbservices.DBServicesApplication
+         </param-value>
+      </init-param>
+      <init-param>
+			<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+			<param-value>true</param-value>
+		</init-param>
+
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Rest</servlet-name>
+      <url-pattern>/*</url-pattern>
+   </servlet-mapping>
+
+<!--   <servlet>
+      <servlet-name>Start</servlet-name>
+      <servlet-class>
+         com.sun.jersey.spi.container.servlet.ServletContainer
+      </servlet-class>
+      <init-param>
+         <param-name>javax.ws.rs.Application</param-name>
+         <param-value>
+            com.paypal.sea.s2dbservices.DbApplication
+         </param-value>
+      </init-param>
+
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Start</servlet-name>
+      <url-pattern>/rest/*</url-pattern>
+   </servlet-mapping>
+
+   -->
+
+</web-app>

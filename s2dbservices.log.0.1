@@ -1,0 +1,951 @@
+31/01/2014 04:38:13.578 [WARNING] My first log
+31/01/2014 04:38:13.580 [FINE] Time taken to query(catlogdb) :3 ms
+31/01/2014 04:38:13.636 [FINE] insert into gsm_ops values(1000,'99RQALVS11G','stage2p12345',sysdate,sysdate,sysdate,sysdate,'QUEUED',null,'BASIC,PAY11G,PAYPILOT11G','METADB','RQA',null,null,'99RQALVS11G06') return value : 0
+31/01/2014 04:38:13.776 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:38:13.776 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:38:13.782 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:38:13.782 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:38:13.787 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:38:13.788 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:38:13.793 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:38:13.793 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:38:14.145 [INFO] Selected db_server is : [lvsvmdb01]
+31/01/2014 04:38:14.201 [INFO] Time taken to query(catlogdb) :1391166494200 ms
+31/01/2014 04:38:14.203 [INFO] Time taken to query(catlogdb) :1391166494203 ms
+31/01/2014 04:38:14.207 [FINE] Time taken to query(catlogdb) :2 ms
+31/01/2014 04:38:14.209 [INFO] Time taken to query(catlogdb) :4 ms
+31/01/2014 04:38:14.212 [FINE] Time taken to query(catlogdb) :2 ms
+31/01/2014 04:38:14.796 [WARNING] My first log
+31/01/2014 04:38:14.796 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:38:14.798 [INFO] Output:>>
+31/01/2014 04:38:14.798 [INFO] Std error:>>
+31/01/2014 04:38:14.799 [INFO] Exit Value: 0
+31/01/2014 04:38:14.840 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:38:14.842 [INFO] Output:>>
+31/01/2014 04:38:14.842 [INFO] Std error:>>
+31/01/2014 04:38:14.843 [INFO] Exit Value: 0
+31/01/2014 04:38:14.879 [INFO] ssh lvsvmdb01 Run_this_script stage2p1234 META
+31/01/2014 04:38:14.881 [INFO] Output:>>
+31/01/2014 04:38:14.881 [INFO] Std error:>>
+31/01/2014 04:38:14.882 [INFO] Exit Value: 0
+31/01/2014 04:38:14.916 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:38:14.918 [INFO] Output:>>
+31/01/2014 04:38:14.918 [INFO] Std error:>>
+31/01/2014 04:38:14.919 [INFO] Exit Value: 0
+31/01/2014 04:38:14.951 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:38:14.953 [INFO] Output:>>
+31/01/2014 04:38:14.953 [INFO] Std error:>>
+31/01/2014 04:38:14.954 [INFO] Exit Value: 0
+31/01/2014 04:38:15.006 [INFO] ssh lvsvmdb01 Run_this_script SRC TARGET
+31/01/2014 04:38:15.008 [INFO] Output:>>
+31/01/2014 04:38:15.009 [INFO] Std error:>>
+31/01/2014 04:38:15.010 [INFO] Exit Value: 0
+31/01/2014 04:38:15.045 [INFO] ssh lvsvmdb01 Run_this_script SRC TARGET
+31/01/2014 04:38:15.047 [INFO] Output:>>
+31/01/2014 04:38:15.048 [INFO] Std error:>>
+31/01/2014 04:38:15.048 [INFO] Exit Value: 0
+31/01/2014 04:38:15.099 [INFO] ssh lvsvmdb01 Run_this_script AAA stage2p1234 lvsvna01 99RQALVS11G RQA BASIC,PAY11G,PAYPILOT11G META
+31/01/2014 04:38:15.101 [INFO] Output:>>
+31/01/2014 04:38:15.102 [INFO] Std error:>>
+31/01/2014 04:38:15.103 [INFO] Exit Value: 0
+31/01/2014 04:38:15.546 [WARNING] My first log
+31/01/2014 04:38:15.547 [SEVERE] SQLException occured while closing the connection java.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.closeConnection(OracleConnection2.java:55)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testCloseConnection(OracleConnection2Test.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.589 [INFO] Test query
+31/01/2014 04:38:15.590 [INFO] Test query
+31/01/2014 04:38:15.590 [SEVERE] SQLException in runQueryMultipleRows function while executing the queryjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runQueryMultipleRows(OracleConnection2.java:198)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testrunQueryMultipleRows(OracleConnection2Test.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.630 [INFO] Test query
+31/01/2014 04:38:15.631 [INFO] Test query
+31/01/2014 04:38:15.631 [SEVERE] SQLException in runQuerySingleRow function while executing the queryjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runQuerySingleRow(OracleConnection2.java:157)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testrunQuerySingleRow(OracleConnection2Test.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.674 [SEVERE] Transaction unsuccessful. ROLLBACK completed
+31/01/2014 04:38:15.675 [SEVERE] SQLException while doing rollbackjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.doRollback(OracleConnection2.java:276)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testDoRollBack(OracleConnection2Test.java:250)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.675 [SEVERE] Transaction unsuccessful. ROLLBACK completed
+31/01/2014 04:38:15.790 [SEVERE] SQLException while changing autocommit statusjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.setCommit(OracleConnection2.java:290)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testSetCommit(OracleConnection2Test.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.831 [INFO] Transaction successful. COMMIT completed
+31/01/2014 04:38:15.832 [SEVERE] SQLException while doing commitjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.doCommit(OracleConnection2.java:258)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testDoCommit(OracleConnection2Test.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.875 [INFO] Test query
+31/01/2014 04:38:15.876 [SEVERE] SQLException in runUpdate function while executing the queryjava.sql.SQLException: e1
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runUpdate(OracleConnection2.java:235)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testRunUpdate(OracleConnection2Test.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:15.877 [INFO] Test query
+31/01/2014 04:38:15.972 [SEVERE] Service Id : METADB Exception code: 12505 Exception message: mock SQL Exception
+31/01/2014 04:38:15.977 [SEVERE] Service Id : METADB Exception code: 12528 Exception message: mock SQL Exception
+31/01/2014 04:38:15.981 [SEVERE] Service Id : METADB Exception code: 12526 Exception message: mock SQL Exception
+31/01/2014 04:38:15.986 [SEVERE] Service Id : METADB Exception code: 1033 Exception message: mock SQL Exception
+31/01/2014 04:38:16.214 [SEVERE] ClassNotFoundException while trying to make connection to DBjava.lang.ClassNotFoundException: Mock class not found
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.performIntercept(MockitoMethodInvocationControl.java:292)
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.invoke(MockitoMethodInvocationControl.java:194)
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:105)
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:168)
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.connect(OracleConnection2.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.powermock.reflect.internal.WhiteboxImpl.performMethodInvocation(WhiteboxImpl.java:2014)
+	at org.powermock.reflect.internal.WhiteboxImpl.doInvokeMethod(WhiteboxImpl.java:885)
+	at org.powermock.reflect.internal.WhiteboxImpl.invokeMethod(WhiteboxImpl.java:713)
+	at org.powermock.reflect.Whitebox.invokeMethod(Whitebox.java:401)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testConnectWithArgumentsClassNotFoundException(OracleConnection2Test.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:38:16.240 [SEVERE] Service Id : METADB Exception code: 17002 Exception message: mock SQL Exception
+31/01/2014 04:38:16.890 [WARNING] My first log
+31/01/2014 04:38:16.890 [INFO] Startup successful
+31/01/2014 04:38:16.930 [INFO] Shutdown successful
+31/01/2014 04:38:17.031 [SEVERE] null
+31/01/2014 04:38:17.121 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:38:17.121 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:38:17.154 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:38:17.154 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:38:17.188 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.189 [INFO] PID : 1000
+31/01/2014 04:38:17.190 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.190 [SEVERE] filer not found
+31/01/2014 04:38:17.191 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:38:17.223 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.224 [INFO] PID : 1000
+31/01/2014 04:38:17.225 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.226 [INFO] filer : lvsvna01
+31/01/2014 04:38:17.226 [SEVERE] Metadata insertion failed
+31/01/2014 04:38:17.226 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:38:17.262 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:38:17.294 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:38:17.295 [SEVERE] Stage not found
+31/01/2014 04:38:17.323 [SEVERE] Incorrect input
+31/01/2014 04:38:17.378 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.379 [INFO] PID : 1000
+31/01/2014 04:38:17.380 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.381 [INFO] filer : lvsvna01
+31/01/2014 04:38:17.381 [SEVERE] Master version not found
+31/01/2014 04:38:17.381 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:38:17.408 [SEVERE] Stage not found
+31/01/2014 04:38:17.432 [SEVERE] DB not cloned
+31/01/2014 04:38:17.460 [SEVERE] All the databases connected to this stage are already up
+31/01/2014 04:38:17.488 [INFO]  DB QADBAAAA failed to start. Contact the DBA.
+31/01/2014 04:38:17.509 [SEVERE] Stage not found
+31/01/2014 04:38:17.531 [SEVERE] DB not cloned
+31/01/2014 04:38:17.553 [SEVERE] null
+31/01/2014 04:38:17.578 [SEVERE] All the databases connected to this stage are already down
+31/01/2014 04:38:17.603 [INFO]  DB QADBAAAA failed to start. Contact the DBA.
+31/01/2014 04:38:17.625 [SEVERE] Stage not found
+31/01/2014 04:38:17.641 [SEVERE] null
+31/01/2014 04:38:17.659 [SEVERE] Cannot delete the stage. Cloning in progress
+31/01/2014 04:38:17.676 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:38:17.677 [SEVERE] Removal already in progress
+31/01/2014 04:38:17.695 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:38:17.696 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:38:17.714 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:38:17.715 [INFO] stage2p1234 has been successfully removed
+31/01/2014 04:38:17.729 [INFO] Wrong Input
+31/01/2014 04:38:17.749 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:38:17.750 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:38:17.769 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:38:17.770 [INFO] cloneRequest() : ret0
+31/01/2014 04:38:17.785 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:38:17.786 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:38:17.799 [INFO] Some error detected
+31/01/2014 04:38:17.814 [SEVERE] Stage already present
+31/01/2014 04:38:17.829 [INFO] db_server : null
+31/01/2014 04:38:17.829 [SEVERE] Capacity full. Cant allocate more space
+31/01/2014 04:38:17.846 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.847 [INFO] PID : 1000
+31/01/2014 04:38:17.848 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.848 [INFO] filer : lvsvna01
+31/01/2014 04:38:17.849 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:38:17.868 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.869 [INFO] PID : 1000
+31/01/2014 04:38:17.871 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.872 [INFO] filer : lvsvna01
+31/01/2014 04:38:17.874 [INFO] new_pod : AAA
+31/01/2014 04:38:17.875 [INFO] db_server : lvsvmdb01
+31/01/2014 04:38:17.875 [INFO] PID : 1000
+31/01/2014 04:38:17.876 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:38:17.877 [INFO] filer : lvsvna01
+31/01/2014 04:38:17.889 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:38:17.890 [SEVERE] null
+31/01/2014 04:38:17.950 [SEVERE] No information available for selected dates
+31/01/2014 04:38:17.975 [SEVERE] Incorrect input
+31/01/2014 04:38:17.985 [SEVERE] Incorrect input
+31/01/2014 04:38:17.995 [SEVERE] Source DB not found in the list. Please contact the DBA
+31/01/2014 04:38:18.058 [SEVERE] Stage not found
+31/01/2014 04:38:18.069 [SEVERE] null
+31/01/2014 04:38:18.361 [WARNING] My first log
+31/01/2014 04:38:18.362 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:38:18.365 [FINE] Time taken to connectStageDB() 2 ms
+31/01/2014 04:38:18.366 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:38:18.367 [FINE] Time taken to connectStageDB() 0 ms
+31/01/2014 04:38:18.369 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbbAAA
+31/01/2014 04:38:18.370 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:38:18.371 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbcAAA
+31/01/2014 04:38:18.372 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:38:18.400 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:38:18.403 [INFO] Listener reload successful for lvsvmdb01
+31/01/2014 04:38:18.405 [FINE] Time taken to connectStageDB() 5 ms
+31/01/2014 04:38:18.407 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbbAAA
+31/01/2014 04:38:18.408 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:38:18.409 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbcAAA
+31/01/2014 04:38:18.410 [INFO] Time taken to connectStageDB() 1 ms
+31/01/2014 04:38:18.412 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:38:18.414 [SEVERE] Listener reload failed for lvsvmdb01
+31/01/2014 04:38:18.415 [FINE] Time taken to connectStageDB() 2 ms
+31/01/2014 04:38:18.436 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:38:18.437 [INFO] Waiting for listener reload
+31/01/2014 04:40:18.464 [FINE] Time taken to connectStageDB() 120026 ms
+31/01/2014 04:47:28.017 [WARNING] My first log
+31/01/2014 04:47:28.019 [FINE] Time taken to query(catlogdb) :3 ms
+31/01/2014 04:47:28.068 [FINE] insert into gsm_ops values(1000,'99RQALVS11G','stage2p12345',sysdate,sysdate,sysdate,sysdate,'QUEUED',null,'BASIC,PAY11G,PAYPILOT11G','METADB','RQA',null,null,'99RQALVS11G06') return value : 0
+31/01/2014 04:47:28.438 [INFO] Selected db_server is : [lvsvmdb01]
+31/01/2014 04:47:28.493 [INFO] Time taken to query(catlogdb) :1391167048492 ms
+31/01/2014 04:47:28.495 [INFO] Time taken to query(catlogdb) :1391167048495 ms
+31/01/2014 04:47:28.499 [FINE] Time taken to query(catlogdb) :2 ms
+31/01/2014 04:47:28.501 [INFO] Time taken to query(catlogdb) :4 ms
+31/01/2014 04:47:28.504 [FINE] Time taken to query(catlogdb) :2 ms
+31/01/2014 04:47:28.667 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:47:28.667 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:47:28.671 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:47:28.671 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:47:28.676 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:47:28.676 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:47:28.680 [INFO] update pods set MONITOR_GG = 'YES', MONITOR_DB = 'YES', current_status = 'Ready', webserver_dba = 'AAA', database_server = 'servername' where webserver_dbafriendly = 'revertstage'
+31/01/2014 04:47:28.681 [INFO] delete from db_pod_history where stage_name = 'revertstage'
+31/01/2014 04:47:29.068 [WARNING] My first log
+31/01/2014 04:47:29.068 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:47:29.070 [INFO] Output:>>
+31/01/2014 04:47:29.070 [INFO] Std error:>>
+31/01/2014 04:47:29.071 [INFO] Exit Value: 0
+31/01/2014 04:47:29.111 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:47:29.112 [INFO] Output:>>
+31/01/2014 04:47:29.113 [INFO] Std error:>>
+31/01/2014 04:47:29.114 [INFO] Exit Value: 0
+31/01/2014 04:47:29.149 [INFO] ssh lvsvmdb01 Run_this_script stage2p1234 META
+31/01/2014 04:47:29.151 [INFO] Output:>>
+31/01/2014 04:47:29.152 [INFO] Std error:>>
+31/01/2014 04:47:29.152 [INFO] Exit Value: 0
+31/01/2014 04:47:29.186 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:47:29.187 [INFO] Output:>>
+31/01/2014 04:47:29.188 [INFO] Std error:>>
+31/01/2014 04:47:29.188 [INFO] Exit Value: 0
+31/01/2014 04:47:29.221 [INFO] ssh lvsvmdb01 Run_this_script QADBA111
+31/01/2014 04:47:29.222 [INFO] Output:>>
+31/01/2014 04:47:29.223 [INFO] Std error:>>
+31/01/2014 04:47:29.223 [INFO] Exit Value: 0
+31/01/2014 04:47:29.264 [INFO] ssh lvsvmdb01 Run_this_script SRC TARGET
+31/01/2014 04:47:29.266 [INFO] Output:>>
+31/01/2014 04:47:29.266 [INFO] Std error:>>
+31/01/2014 04:47:29.267 [INFO] Exit Value: 0
+31/01/2014 04:47:29.305 [INFO] ssh lvsvmdb01 Run_this_script SRC TARGET
+31/01/2014 04:47:29.307 [INFO] Output:>>
+31/01/2014 04:47:29.308 [INFO] Std error:>>
+31/01/2014 04:47:29.308 [INFO] Exit Value: 0
+31/01/2014 04:47:29.345 [INFO] ssh lvsvmdb01 Run_this_script AAA stage2p1234 lvsvna01 99RQALVS11G RQA BASIC,PAY11G,PAYPILOT11G META
+31/01/2014 04:47:29.347 [INFO] Output:>>
+31/01/2014 04:47:29.348 [INFO] Std error:>>
+31/01/2014 04:47:29.348 [INFO] Exit Value: 0
+31/01/2014 04:47:29.719 [WARNING] My first log
+31/01/2014 04:47:29.721 [SEVERE] SQLException while changing autocommit statusjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.setCommit(OracleConnection2.java:290)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testSetCommit(OracleConnection2Test.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:29.772 [INFO] Transaction successful. COMMIT completed
+31/01/2014 04:47:29.773 [SEVERE] SQLException while doing commitjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.doCommit(OracleConnection2.java:258)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testDoCommit(OracleConnection2Test.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:29.816 [INFO] Test query
+31/01/2014 04:47:29.817 [SEVERE] SQLException in runUpdate function while executing the queryjava.sql.SQLException: e1
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runUpdate(OracleConnection2.java:235)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testRunUpdate(OracleConnection2Test.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:29.818 [INFO] Test query
+31/01/2014 04:47:30.007 [SEVERE] ClassNotFoundException while trying to make connection to DBjava.lang.ClassNotFoundException: Mock class not found
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.performIntercept(MockitoMethodInvocationControl.java:292)
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.invoke(MockitoMethodInvocationControl.java:194)
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:105)
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:168)
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.connect(OracleConnection2.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.powermock.reflect.internal.WhiteboxImpl.performMethodInvocation(WhiteboxImpl.java:2014)
+	at org.powermock.reflect.internal.WhiteboxImpl.doInvokeMethod(WhiteboxImpl.java:885)
+	at org.powermock.reflect.internal.WhiteboxImpl.invokeMethod(WhiteboxImpl.java:713)
+	at org.powermock.reflect.Whitebox.invokeMethod(Whitebox.java:401)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testConnectWithArgumentsClassNotFoundException(OracleConnection2Test.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:30.096 [SEVERE] Service Id : METADB Exception code: 17002 Exception message: mock SQL Exception
+31/01/2014 04:47:30.189 [SEVERE] SQLException occured while closing the connection java.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.closeConnection(OracleConnection2.java:55)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testCloseConnection(OracleConnection2Test.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:30.224 [INFO] Test query
+31/01/2014 04:47:30.225 [INFO] Test query
+31/01/2014 04:47:30.226 [SEVERE] SQLException in runQueryMultipleRows function while executing the queryjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runQueryMultipleRows(OracleConnection2.java:198)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testrunQueryMultipleRows(OracleConnection2Test.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:30.268 [INFO] Test query
+31/01/2014 04:47:30.269 [INFO] Test query
+31/01/2014 04:47:30.270 [SEVERE] SQLException in runQuerySingleRow function while executing the queryjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.runQuerySingleRow(OracleConnection2.java:157)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testrunQuerySingleRow(OracleConnection2Test.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:30.312 [SEVERE] Transaction unsuccessful. ROLLBACK completed
+31/01/2014 04:47:30.313 [SEVERE] SQLException while doing rollbackjava.sql.SQLException
+	at com.paypal.sea.s2dbservices.oracledbaccess.OracleConnection2.doRollback(OracleConnection2.java:276)
+	at com.paypal.sea.s2dbservices.OracleConnection2Test.testDoRollBack(OracleConnection2Test.java:250)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:312)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.executeTest(PowerMockJUnit44RunnerDelegateImpl.java:296)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$PowerMockJUnit44MethodRunner.runBeforesThenTestThenAfters(PowerMockJUnit44RunnerDelegateImpl.java:284)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.invokeTestMethod(PowerMockJUnit44RunnerDelegateImpl.java:209)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.runMethods(PowerMockJUnit44RunnerDelegateImpl.java:148)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl$1.run(PowerMockJUnit44RunnerDelegateImpl.java:122)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.powermock.modules.junit4.internal.impl.PowerMockJUnit44RunnerDelegateImpl.run(PowerMockJUnit44RunnerDelegateImpl.java:120)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.run(JUnit4TestSuiteChunkerImpl.java:102)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.run(AbstractCommonPowerMockRunner.java:53)
+	at org.powermock.modules.junit4.PowerMockRunner.run(PowerMockRunner.java:42)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+31/01/2014 04:47:30.313 [SEVERE] Transaction unsuccessful. ROLLBACK completed
+31/01/2014 04:47:30.415 [SEVERE] Service Id : METADB Exception code: 12505 Exception message: mock SQL Exception
+31/01/2014 04:47:30.419 [SEVERE] Service Id : METADB Exception code: 12528 Exception message: mock SQL Exception
+31/01/2014 04:47:30.424 [SEVERE] Service Id : METADB Exception code: 12526 Exception message: mock SQL Exception
+31/01/2014 04:47:30.428 [SEVERE] Service Id : METADB Exception code: 1033 Exception message: mock SQL Exception
+31/01/2014 04:47:31.069 [WARNING] My first log
+31/01/2014 04:47:31.069 [INFO] Startup successful
+31/01/2014 04:47:31.109 [INFO] Shutdown successful
+31/01/2014 04:47:31.181 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:31.182 [INFO] PID : 1000
+31/01/2014 04:47:31.183 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:31.184 [INFO] filer : lvsvna01
+31/01/2014 04:47:31.184 [SEVERE] Master version not found
+31/01/2014 04:47:31.187 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:47:31.302 [SEVERE] Stage not found
+31/01/2014 04:47:31.332 [SEVERE] DB not cloned
+31/01/2014 04:47:31.365 [SEVERE] All the databases connected to this stage are already up
+31/01/2014 04:47:31.399 [INFO]  DB QADBAAAA failed to start. Contact the DBA.
+31/01/2014 04:47:31.429 [SEVERE] Stage not found
+31/01/2014 04:47:31.457 [SEVERE] DB not cloned
+31/01/2014 04:47:31.484 [SEVERE] null
+31/01/2014 04:47:31.515 [SEVERE] All the databases connected to this stage are already down
+31/01/2014 04:47:31.548 [INFO]  DB QADBAAAA failed to start. Contact the DBA.
+31/01/2014 04:47:31.574 [SEVERE] Stage not found
+31/01/2014 04:47:31.601 [SEVERE] null
+31/01/2014 04:47:31.625 [SEVERE] Cannot delete the stage. Cloning in progress
+31/01/2014 04:47:31.651 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:47:31.651 [SEVERE] Removal already in progress
+31/01/2014 04:47:31.674 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:47:31.675 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:47:31.699 [INFO] The server corresponding to stage2p1234 is : lvsvmdb01
+31/01/2014 04:47:31.701 [INFO] stage2p1234 has been successfully removed
+31/01/2014 04:47:31.721 [INFO] Wrong Input
+31/01/2014 04:47:31.744 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:47:31.745 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:47:31.768 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:47:31.769 [INFO] cloneRequest() : ret0
+31/01/2014 04:47:31.789 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:47:31.790 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:47:31.809 [INFO] Some error detected
+31/01/2014 04:47:31.827 [SEVERE] Stage already present
+31/01/2014 04:47:31.845 [INFO] db_server : null
+31/01/2014 04:47:31.845 [SEVERE] Capacity full. Cant allocate more space
+31/01/2014 04:47:31.864 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:31.865 [INFO] PID : 1000
+31/01/2014 04:47:31.866 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:31.866 [INFO] filer : lvsvna01
+31/01/2014 04:47:31.867 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:47:31.887 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:31.888 [INFO] PID : 1000
+31/01/2014 04:47:31.889 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:31.889 [INFO] filer : lvsvna01
+31/01/2014 04:47:31.891 [INFO] new_pod : AAA
+31/01/2014 04:47:31.892 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:31.893 [INFO] PID : 1000
+31/01/2014 04:47:31.894 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:31.894 [INFO] filer : lvsvna01
+31/01/2014 04:47:31.909 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:47:31.910 [SEVERE] null
+31/01/2014 04:47:31.926 [SEVERE] No information available for selected dates
+31/01/2014 04:47:31.954 [SEVERE] Incorrect input
+31/01/2014 04:47:31.966 [SEVERE] Incorrect input
+31/01/2014 04:47:31.980 [SEVERE] Source DB not found in the list. Please contact the DBA
+31/01/2014 04:47:32.044 [SEVERE] Stage not found
+31/01/2014 04:47:32.056 [SEVERE] null
+31/01/2014 04:47:32.086 [SEVERE] null
+31/01/2014 04:47:32.104 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:47:32.104 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:47:32.119 [INFO] cloneRequest() : stage2p1234 version : 99RQALVS11G cycle : RQA option : BASIC,PAY11G,PAYPILOT11G
+31/01/2014 04:47:32.120 [SEVERE] You are requesting a clone of a non-clonable DB, hence it is rejected. Please contact Frontline for further assistance
+31/01/2014 04:47:32.134 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:32.135 [INFO] PID : 1000
+31/01/2014 04:47:32.136 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:32.136 [SEVERE] filer not found
+31/01/2014 04:47:32.137 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:47:32.152 [INFO] db_server : lvsvmdb01
+31/01/2014 04:47:32.152 [INFO] PID : 1000
+31/01/2014 04:47:32.153 [INFO] hal_process : HAL_LVS2
+31/01/2014 04:47:32.154 [INFO] filer : lvsvna01
+31/01/2014 04:47:32.154 [SEVERE] Metadata insertion failed
+31/01/2014 04:47:32.154 [SEVERE] Operation unsuccessful due to internal error. Please contact the DBA.
+31/01/2014 04:47:32.167 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:47:32.179 [INFO] getStageDBStatus() : stage2p1234
+31/01/2014 04:47:32.179 [SEVERE] Stage not found
+31/01/2014 04:47:32.196 [SEVERE] Incorrect input
+31/01/2014 04:47:32.210 [SEVERE] Invalid server name
+31/01/2014 04:47:32.486 [WARNING] My first log
+31/01/2014 04:47:32.487 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:47:32.490 [INFO] Listener reload successful for lvsvmdb01
+31/01/2014 04:47:32.492 [FINE] Time taken to connectStageDB() 5 ms
+31/01/2014 04:47:32.494 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbbAAA
+31/01/2014 04:47:32.495 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:47:32.496 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbcAAA
+31/01/2014 04:47:32.497 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:47:32.499 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:47:32.501 [SEVERE] Listener reload failed for lvsvmdb01
+31/01/2014 04:47:32.502 [FINE] Time taken to connectStageDB() 2 ms
+31/01/2014 04:47:32.528 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:47:32.529 [FINE] Time taken to connectStageDB() 1 ms
+31/01/2014 04:47:32.531 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:47:32.532 [FINE] Time taken to connectStageDB() 0 ms
+31/01/2014 04:47:32.533 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbbAAA
+31/01/2014 04:47:32.534 [INFO] Time taken to connectStageDB() 1 ms
+31/01/2014 04:47:32.536 [INFO] db : lvsvmdb01.qa.paypal.com sid :qadbcAAA
+31/01/2014 04:47:32.537 [INFO] Time taken to connectStageDB() 0 ms
+31/01/2014 04:47:32.557 [FINE] db : lvsvmdb01.qa.paypal.com sid :qadbaAAA
+31/01/2014 04:47:32.558 [INFO] Waiting for listener reload
+31/01/2014 04:49:32.573 [FINE] Time taken to connectStageDB() 120013 ms
