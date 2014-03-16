@@ -6,7 +6,6 @@
 	<artifactId>s2dbservices</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-   <!-- hello1 -->
 	<name>s2dbservices</name>
 	<url>http://maven.apache.org</url>
 
